@@ -1,0 +1,77 @@
+{
+    "finding": {
+      "canonicalName": "projects/PROJECT_NUMBER/sources/SOURCE_ID/findings/FINDING_ID",
+      "category": "WEAK_CREDENTIALS",
+      "compliances": [
+        {
+          "ids": [
+            "A2"
+          ],
+          "standard": "owasp",
+          "version": "2017"
+        },
+        {
+          "ids": [
+            "A07"
+          ],
+          "standard": "owasp",
+          "version": "2021"
+        }
+      ],
+      "contacts": {
+        "security": {
+          "contacts": [
+            {
+              "email": "EMAIL_ADDRESS_1"
+            },
+            {
+              "email": "EMAIL_ADDRESS_2"
+            }
+          ]
+        },
+        "technical": {
+          "contacts": [
+            {
+              "email": "EMAIL_ADDRESS_3"
+            }
+          ]
+        }
+      },
+      "createTime": "2021-08-19T06:26:20.038Z",
+      "description": "Well known or weak credentials have been detected.",
+      "eventTime": "2022-06-24T19:21:22.783Z",
+      "findingClass": "MISCONFIGURATION",
+      "mute": "UNDEFINED",
+      "name": "organizations/ORGANIZATION_ID/sources/SOURCE_ID/findings/FINDING_ID",
+      "parent": "organizations/ORGANIZATION_ID/sources/SOURCE_ID",
+      "resourceName": "//cloudresourcemanager.googleapis.com/projects/PROJECT_NUMBER",
+      "securityMarks": {
+        "name": "organizations/ORGANIZATION_ID/sources/SOURCE_ID/findings/FINDING_ID/securityMarks"
+      },
+      "severity": "CRITICAL",
+      "sourceProperties": {
+        "description": "Well known or weak credentials have been detected.",
+        "targets": [
+          {
+            "ipv4Address": {
+              "address": "IP_ADDRESS",
+              "subnetMask": 32
+            },
+            "port": PORT_NUMBER,
+            "resourceName": "//compute.googleapis.com/projects/PROJECT_ID/zones/ZONE_NAME/instances/VM_NAME",
+            "transportProtocol": "TCP"
+          }
+        ]
+      },
+      "state": "ACTIVE"
+    },
+    "resource": {
+      "displayName": "PROJECT_NAME",
+      "name": "//cloudresourcemanager.googleapis.com/projects/PROJECT_NUMBER",
+      "parentDisplayName": "ORGANIZATION_NAME",
+      "parentName": "//cloudresourcemanager.googleapis.com/organizations/ORGANIZATION_ID",
+      "projectDisplayName": "PROJECT_NAME",
+      "projectName": "//cloudresourcemanager.googleapis.com/projects/PROJECT_NUMBER",
+      "type": "google.cloud.resourcemanager.Project"
+    }
+  }
